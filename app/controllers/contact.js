@@ -10,7 +10,9 @@ export default Ember.Controller.extend({
 
     validMessage: Ember.computed.gte('message.length', 5),
 
-    isDisabled: Ember.computed.and('validEmail', 'validMessage'),
+    validData: Ember.computed.and('validEmail', 'validMessage'),
+
+    isDisabled: Ember.computed.not('validData'),
 
     actions: {
       saveMessage(){
