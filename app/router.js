@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('invitations');
     this.route('contact');
     this.route('contacts');
+    this.route('seeder');
   });
 
   this.route('libraries', function() {
